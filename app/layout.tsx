@@ -1,22 +1,22 @@
-import './font.css'
-import './globals.css'
-import type { Metadata } from 'next'
+import "./font.css";
+import "./globals.css";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Mistrium',
-  description: 'Mistrium website',
-}
+  title: "Mistrium",
+  description: "Mistrium website",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body className='min-h-screen bg-white-100'>
+      <body className="min-h-screen bg-white-100 max-w-[1440px] overflow-x-hidden">
         {children}
       </body>
     </html>
-  )
+  );
 }

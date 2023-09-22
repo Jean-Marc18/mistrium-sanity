@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="flex-center fixed top-0 z-50 w-full border-b-2 border-white-100 text-black-100 py-7">
+    <nav className="flex-center fixed top-0 z-50 w-full text-black-100 py-7">
       <div className="flex-between mx-auto w-full max-w-screen-2xl px-6 xs:px-8 sm:px-16">
         <Link href="/">
           <Image
@@ -50,7 +50,7 @@ const Navbar = () => {
               className="block cursor-pointer"
             />
           </li>
-          <li className="relative">
+          <li className="relative cursor-pointer">
             <Image
               src="/assets/images/panier.png"
               alt="panier"
@@ -58,8 +58,8 @@ const Navbar = () => {
               width={20}
               className="block cursor-pointer"
             />
-            <div className="absolute bottom-2 left-2 bg-red-500 p-2 rounded-full text-center w-1 h-1 flex items-center justify-center">
-              <span className="text-xs text-white-100">2</span>
+            <div className="absolute bottom-2 left-2 bg-red-400 p-2 rounded-full text-center w-1 h-1 flex items-center justify-center">
+              <span className="text-xs text-white">2</span>
             </div>
           </li>
           <li>
