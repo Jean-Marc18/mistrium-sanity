@@ -1,25 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
-
 import { Button } from "@/components/ui/button";
 
-import Loading from "@/components/loading";
 import Clients from "@/sections/Clients";
 import Collection from "@/components/Collection";
 import Image from "next/image";
 
 const HomePage = () => {
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-  if (!isMounted) {
-    return <Loading />;
-  }
-
   return (
     <main className="flex-center flex-col paddings mx-auto w-full max-w-screen-2xl gap-2">
       <section className="nav-padding w-full">
@@ -80,8 +67,6 @@ const HomePage = () => {
       <section className="flex flex-col lg:flex-row items-center justify-center my-[2rem] w-full h-full">
         <Collection />
       </section>
-
-      
     </main>
   );
 };
