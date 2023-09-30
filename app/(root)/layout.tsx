@@ -6,7 +6,7 @@ import Loading from "@/components/loading";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
-const layout = ({ children }: { children: React.ReactNode }) => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -25,4 +25,4 @@ const layout = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export default layout;
+export default Layout;
