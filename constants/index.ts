@@ -2,10 +2,10 @@ import { clients } from "../constants/images";
 
 export const NavLinks = [
     { href: '/', key: 'home', text: 'home' },
-    { href: '/about', key: 'about us', text: 'about us' },
+    { href: '/about', key: 'about', text: 'about' },
     { href: '/products', key: 'products', text: 'products' },
     { href: '/services', key: 'Services', text: 'Services' },
-    { href: '/', key: 'contact us', text: 'contact us' }
+    { href: '/', key: 'contact', text: 'contact' }
 ];
 
 export const FooterLinks = [
