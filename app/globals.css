@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  scroll-behavior: smooth;
+  outline: none;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -10,7 +15,7 @@ body {
 }
 
 nav {
-  background: #fff;
+  background: #ffffffae;
   backdrop-filter: blur(1.5px);
 }
 

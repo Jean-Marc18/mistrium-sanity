@@ -7,8 +7,9 @@ import { Button } from "@/components/ui/button";
 import Loading from "@/components/loading";
 import Clients from "@/sections/Clients";
 import Collection from "@/components/Collection";
+import Image from "next/image";
 
-const page = () => {
+const HomePage = () => {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -60,9 +61,11 @@ const page = () => {
             </div>
 
             <div className="absolute right-0 lg:flex justify-end items-end w-[75%] hidden z">
-              <img
+              <Image
                 src="/assets/images/fauteuil-lg_.jpg"
                 alt="fauteuil banner"
+                width={1000}
+                height={1000}
                 className="object-cover w-full h-full"
               />
             </div>
@@ -83,4 +86,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default HomePage;
